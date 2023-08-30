@@ -37,20 +37,11 @@
       font-size: 18px; /* 修改字体大小 */
     }
 
-    /* 媒体查询：针对小屏幕设备进行样式调整 */
-    @media only screen and (max-width: 600px) {
-      h1 {
-        font-size: 24px;
-      }
-      
-      #accountInput, button {
-        width: 80%;
-        font-size: 16px;
-      }
-      
-      #result {
-        font-size: 16px;
-      }
+    /* 设置版权声明样式 */
+    #poweredBy {
+      text-align: center;
+      margin-top: 20px; /* 修改上边距 */
+      font-size: 14px;
     }
   </style>
   <script type="text/javascript">
@@ -66,9 +57,6 @@
         "eyesusaffalai@hotmail.com": "zyY6WZ02",
         "UvJzVwTxB@outlook.com": "7dyNSitM",
         "shandiana003@outlook.com": "wh327220",
-        "user2": "password2",
-        "user2": "password2",
-        "user2": "password2",
         "user2": "password2",
         // 可以继续添加更多账号和密码
       };
@@ -87,5 +75,9 @@
   <input type="text" id="accountInput" placeholder="请输入账号">
   <button onclick="getPassword()">查询</button>
   <p id="result"></p>
+  
+  <div id="poweredBy">
+    Powered By <a href="https://shandian.xn--ihqx1kcptox0b.fun/#" target="_blank">闪电</a>
+  </div>
 </body>
 </html>
