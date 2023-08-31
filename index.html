@@ -2,80 +2,14 @@
 <html>
 <head>
   <title>账号密码查询</title>
-  <style>
-    /* 设置页面样式 */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f2f2f2;
-    }
-
-    /* 设置标题样式 */
-    h1 {
-      text-align: center;
-      margin-top: 40px; /* 修改为更大的上边距 */
-      font-size: 28px;
-    }
-
-    /* 设置输入框和按钮样式 */
-    #accountInput, button {
-      display: block;
-      width: 90%;
-      max-width: 400px; /* 修改最大宽度 */
-      margin: 20px auto; /* 修改垂直外边距 */
-      padding: 15px; /* 修改内边距 */
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 18px; /* 修改字体大小 */
-    }
-
-    /* 设置结果样式 */
-    #result {
-      text-align: center;
-      margin-top: 20px; /* 修改上边距 */
-      font-size: 18px; /* 修改字体大小 */
-    }
-
-    /* 设置版权声明样式 */
-    #poweredBy {
-      text-align: center;
-      margin-top: 20px; /* 修改上边距 */
-      font-size: 14px;
-    }
-  </style>
-  <script type="text/javascript">
-    function getPassword() {
-      var account = document.getElementById("accountInput").value;
-      
-      // 在这里你可以编写逻辑代码，根据账号查询对应的密码
-      // 例如，你可以通过一个对象或数组来存储账号与密码的对应关系
-      
-      // 假设有一个对象accounts存储账号密码，格式为 { 账号: 密码 }
-      var accounts = {
-        "c429369903@outlook.com": "mussster4",
-        "eyesusaffalai@hotmail.com": "zyY6WZ02",
-        "UvJzVwTxB@outlook.com": "7dyNSitM",
-        "shandiana003@outlook.com": "wh327220",
-        "user2": "password2",
-        // 可以继续添加更多账号和密码
-      };
-      
-      if (account in accounts) {
-        var password = accounts[account];
-        document.getElementById("result").innerHTML = "账号：" + account + " 的密码是：" + password;
-      } else {
-        document.getElementById("result").innerHTML = "错误：账号不存在";
-      }
-    }
-  </script>
+<script src="./resource/main.js"></script>
+<link rel="stylesheet" type="text/css" href="./resource/main.css">
 </head>
 <body>
   <h1>账号密码查询</h1>
   <input type="text" id="accountInput" placeholder="请输入账号">
   <button onclick="getPassword()">查询</button>
   <p id="result"></p>
-  
   <div id="poweredBy">
     Powered By <a href="https://shandian.xn--ihqx1kcptox0b.fun/#" target="_blank">闪电</a>
   </div>
