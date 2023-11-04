@@ -3,7 +3,7 @@ function getAccount() {
   const invitationCode = document.getElementById('invitationCode').value;
 
   // 假设正确的邀请码为'123456'
-  if (invitationCode === '186432') {
+  if (invitationCode === '123456') {
     // 在这里编写获取账号的逻辑，可以通过调用服务器接口或者读取本地存储的数据
 
     // 假设账号信息存储在一个数组中
