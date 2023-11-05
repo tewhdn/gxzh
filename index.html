@@ -29,6 +29,18 @@
         font-size: 18px;
         border-radius: 5px;
       }
+
+      /* 媒体查询 */
+      @media (max-width: 600px) {
+        /* 当屏幕宽度小于等于600px时应用以下样式 */
+        .container {
+          flex-direction: column; /* 垂直排列 */
+        }
+        .button, .input {
+          width: 100%; /* 宽度占满父容器 */
+          margin-bottom: 10px; /* 添加底部间距 */
+        }
+      }
     </style>
   </head>
   <body>
