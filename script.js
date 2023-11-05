@@ -9,8 +9,8 @@ function getAccount() {
     // 假设账号信息存储在一个数组中
     const accounts = [
       { username: 'shandiana002@outlook.com', password: 'mussster4' },
-      { username: 'c429369903@outlook.com', password: 'mussster4' },
-      { username: 'shandiana003@outlook.com', password: 'wh327220' }
+      { username: 'c429369903@outlook.com', password: 'herobrine1' },
+      { username: 'shandiana003@outlook.com', password: 'herobrine2' }
     ];
 
     // 随机选择一个账号
