@@ -29,9 +29,33 @@
         font-size: 18px;
         border-radius: 5px;
       }
+      .notice {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        padding: 10px;
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 9999;
+      }
+      .close-button {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        font-size: 16px;
+        color: #fff;
+        cursor: pointer;
+      }
     </style>
   </head>
   <body>
+    <div class="notice" id="notice">
+      <span class="close-button" onclick="closeNotice()">×</span>
+      更新内容：就是我
+    </div>
     <div class="container">
       <input type="text" id="invitationCode" class="input" placeholder="请输入邀请码">
       <button class="button" onclick="getAccount()">获取账号</button>
