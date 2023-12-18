@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>获取账号</title>
+    <style>
+      body {
+        background-image: url("https://myhkw.cn/open/img/acg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-wrap: wrap;
+      }
+      .button {
+        padding: 10px 20px;
+        font-size: 18px;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+      }
+      .input {
+        padding: 10px 20px;
+        font-size: 18px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <input type="text" id="invitationCode" class="input" placeholder="请输入邀请码">
+      <button class="button" onclick="getAccount()">获取账号</button>
+      <button class="button" onclick="redirectToSponsor()">赞助</button>
+      <button class="button" onclick="sendFeedback()">提交反馈</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
